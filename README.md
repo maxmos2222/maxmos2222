@@ -12,7 +12,7 @@ i'm a kind person :3
 - Nickname: Max
 - Birthday: 18.11.
 - Location: Italy
-- Language: Italian (native), English (fluent)
+- Language: Italian (native), English (a bit fluent)
 
 </details>
 

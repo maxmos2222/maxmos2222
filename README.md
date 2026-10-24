@@ -1,11 +1,9 @@
 <p align="center">
-  <a>
-    <img
-      src="./data/header.svg"
-      alt="Hi i'm Max 👋 :D"
-      width="690"
-    />
-  </a>
+  <img
+    src="./data/header.svg"
+    alt="Hi i'm Max 👋 :D"
+    width="690"
+  />
 </p>
 
 <p align="center">
@@ -19,7 +17,7 @@
 </p>
 
 <p>
-I'm a kind person :3
+  I'm a kind person :3
 </p>
 
 <p align="center">
@@ -49,7 +47,7 @@ I'm a kind person :3
     <picture>
       <img
         src="./data/personal.svg"
-        alt="Nickname: Max; Birthday: 18.11.; Location: Italy; Language: Italian (native), English (a bit fluent)"
+        alt="Nickname: Max; Birthday: 18.11.; Location: Italy; Languages: Italian (native), English (a bit fluent)"
         width="840"
       />
     </picture>
@@ -85,7 +83,7 @@ I'm a kind person :3
     <picture>
       <img
         src="./data/links-title.svg"
-        alt="Skills"
+        alt="Links"
         width="100"
         height="28"
         align="center"
@@ -101,7 +99,8 @@ I'm a kind person :3
         width="840"
       />
     </a>
-    <br />
+  </p>
+</details>
 
 <details>
   <summary>
@@ -120,7 +119,7 @@ I'm a kind person :3
     <picture>
       <img
         src="./data/specs.svg"
-        alt="Processor: 13th Gen Intel(R) Core(TM) i7-13620H; Video Card: NVIDIA GeForce RTX 4060 Laptop GPU; Video Card: #2 Intel(R) UHD Graphics Family; Operating System: Windows 11"
+        alt="Processor: 13th Gen Intel Core i7-13620H; Graphics: NVIDIA GeForce RTX 4060 Laptop GPU; Integrated graphics: Intel UHD Graphics Family; Operating system: Windows 11; RAM: 16 GB"
         width="840"
       />
     </picture>

@@ -1,43 +1,138 @@
-<h1 align="center">Hello 👋 I'm <strong>Max</a></strong>! :D</h1>
+<p align="center">
+  <a>
+    <img
+      src="./data/header.svg"
+      alt="Hi i'm Max 👋 :D"
+      width="690"
+    />
+  </a>
+</p>
 
-<p align="center">Welcome to my README! Here's a little about me:</p>
+<p align="center">
+  <picture>
+    <img
+      src="./data/welcome-title.svg"
+      alt="Welcome to my README! Here's a little about me:"
+      width="690"
+    />
+  </picture>
+</p>
 
-i'm a kind person :3
+<p>
+I'm a kind person :3
+</p>
 
-> Feel free to look through these Dropdowns for Information :3
+<p align="center">
+  <picture>
+    <img
+      src="./data/dropdowns-title.svg"
+      alt="Feel free to look through these dropdowns for information :3"
+      width="690"
+    />
+  </picture>
+</p>
 
 <details>
-<summary><strong>👤 Personal</strong></summary>
+  <summary>
+    <picture>
+      <img
+        src="./data/personal-title.svg"
+        alt="Personal"
+        width="132"
+        height="28"
+        align="center"
+      />
+    </picture>
+  </summary>
 
-- Nickname: Max
-- Birthday: 18.11.
-- Location: Italy
-- Language: Italian (native), English (a bit fluent)
-
+  <p align="center">
+    <picture>
+      <img
+        src="./data/personal.svg"
+        alt="Nickname: Max; Birthday: 18.11.; Location: Italy; Language: Italian (native), English (a bit fluent)"
+        width="840"
+      />
+    </picture>
+  </p>
 </details>
 
 <details>
-<summary><strong>🎮 Interests / Hobbies</strong></summary>
+  <summary>
+    <picture>
+      <img
+        src="./data/interests-title.svg"
+        alt="Interests / Hobbies"
+        width="220"
+        height="28"
+        align="center"
+      />
+    </picture>
+  </summary>
 
-- Gaming
-- reading
-
+  <p align="center">
+    <picture>
+      <img
+        src="./data/interests.svg"
+        alt="Gaming; Reading"
+        width="840"
+      />
+    </picture>
+  </p>
 </details>
 
 <details>
-<summary><strong>🔗 Links</strong></summary>
-
-- [Discord](https://discord.com/users/1322220385411928136)
-
-</details>
+  <summary>
+    <picture>
+      <img
+        src="./data/skills-title.svg"
+        alt="Skills"
+        width="100"
+        height="28"
+        align="center"
+      />
+    </picture>
+  </summary>
+  
+  <p align="center">
+    <a href="https://discord.com/users/1322220385411928136">
+      <img
+        src="./data/link-discord.svg"
+        alt="Discord"
+        width="840"
+      />
+    </a>
+    <br />
 
 <details>
-<summary><strong>🖥️ PC Specs</strong></summary>
+  <summary>
+    <picture>
+      <img
+        src="./data/specs-title.svg"
+        alt="PC Specs"
+        width="132"
+        height="28"
+        align="center"
+      />
+    </picture>
+  </summary>
 
-- Processor: 13th Gen Intel(R) Core(TM) i7-13620H
-- Video Card: NVIDIA GeForce RTX 4060 Laptop GPU
-- Video Card: #2 Intel(R) UHD Graphics Family
-- Operating System: Windows 11
-- RAM: 16 GB
+  <p align="center">
+    <picture>
+      <img
+        src="./data/specs.svg"
+        alt="Processor: 13th Gen Intel(R) Core(TM) i7-13620H; Video Card: NVIDIA GeForce RTX 4060 Laptop GPU; Video Card: #2 Intel(R) UHD Graphics Family; Operating System: Windows 11"
+        width="840"
+      />
+    </picture>
+  </p>
 </details>
 
+<p align="center">
+  <picture>
+    <img
+      src="./data/footer.svg"
+      alt="Feel free to explore some of my repositories. :3"
+      width="690"
+    />
+  </picture>
+</p>

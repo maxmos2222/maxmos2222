@@ -17,7 +17,9 @@
 </p>
 
 <p>
-  I'm a kind person :3
+  I'm a kind person :3, i like videogames, and the books, yes i like reading, incredible eh?
+  I like games, like Minecraft, spelunky 2, kirby etc.
+  I'm quite good at programming :D
 </p>
 
 <p align="center">

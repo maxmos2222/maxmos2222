@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="720"
+  height="96"
+  viewBox="0 0 720 96"
+  role="img"
+  aria-labelledby="footer-title">
+
+  <title id="footer-title">
+    Feel free to explore some of my repositories. :3
+  </title>
+
+  <defs>
+    <linearGradient
+      id="separator-color"
+      gradientUnits="userSpaceOnUse"
+      x1="16" y1="0"
+      x2="704" y2="0">
+
+      <stop offset="0%" stop-color="#8e58d4" stop-opacity="0"/>
+      <stop offset="8%" stop-color="#8e58d4" stop-opacity=".55"/>
+      <stop offset="35%" stop-color="#a566ff" stop-opacity=".85"/>
+      <stop offset="50%" stop-color="#dc8add"/>
+      <stop offset="65%" stop-color="#a566ff" stop-opacity=".85"/>
+      <stop offset="92%" stop-color="#8e58d4" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#8e58d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient
+      id="comet-color"
+      gradientUnits="userSpaceOnUse"
+      x1="-110" y1="0"
+      x2="0" y2="0">
+
+      <stop offset="0%" stop-color="#a566ff" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#a566ff" stop-opacity=".35"/>
+      <stop offset="85%" stop-color="#dc8add" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#fff3ff"/>
+    </linearGradient>
+
+    <path
+      id="separator-track"
+      d="M16 84 H312 L324 78 H348
+         L360 84 L372 78 H396 L408 84 H704"/>
+
+    <mask
+      id="track-mask"
+      maskUnits="userSpaceOnUse"
+      x="12" y="70"
+      width="696" height="24">
+
+      <use
+        href="#separator-track"
+        fill="none"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"/>
+    </mask>
+  </defs>
+
+  <style>
+    .message {
+      font-family: "Segoe UI", Ubuntu, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      fill: #8e58d4;
+      text-anchor: middle;
+      animation: appear 1.3s ease-out both;
+    }
+
+    .separator {
+      animation: appear 1.8s ease-out both;
+    }
+
+    .comet {
+      animation: sweep 6s linear infinite;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes sweep {
+      0% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+      8% {
+        opacity: 1;
+      }
+      76% {
+        opacity: 1;
+      }
+      86%, 100% {
+        transform: translateX(830px);
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .message,
+      .separator {
+        animation: none;
+      }
+
+      .comet {
+        display: none;
+        animation: none;
+      }
+    }
+  </style>
+
+  <text x="360" y="30" class="message">Feel free to explore some of my repositories. :3</text>
+
+  <g transform="translate(0 156) scale(1 -1)">
+    <g class="separator" aria-hidden="true">
+      <use
+        href="#separator-track"
+        fill="none"
+        stroke="url(#separator-color)"
+        stroke-width="6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        opacity=".08"/>
+
+      <use
+        href="#separator-track"
+        fill="none"
+        stroke="url(#separator-color)"
+        stroke-width="1.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+      <g mask="url(#track-mask)">
+        <rect
+          class="comet"
+          x="-110"
+          y="70"
+          width="110"
+          height="24"
+          fill="url(#comet-color)"/>
+      </g>
+
+      <path
+        d="M360 88
+           Q360 94 365 94
+           Q360 94 360 100
+           Q360 94 355 94
+           Q360 94 360 88 Z"
+        fill="#dc8add"
+        opacity=".85"/>
+    </g>
+  </g>
+</svg>

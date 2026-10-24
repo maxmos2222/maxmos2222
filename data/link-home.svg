@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="840"
+  height="54"
+  viewBox="0 0 840 54"
+  role="img"
+  aria-labelledby="discord-link-title">
+
+  <title id="discord-link-title">Discord</title>
+
+  <defs>
+    <linearGradient id="divider-shimmer" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#8e58d4" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#8e58d4" stop-opacity=".12"/>
+      <stop offset="65%" stop-color="#b879d8" stop-opacity=".3"/>
+      <stop offset="85%" stop-color="#b879d8" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#8e58d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="divider-clip" clipPathUnits="userSpaceOnUse">
+      <rect x="72" y="48" width="752" height="4"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    text {
+      font-family: "Segoe UI", Ubuntu, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      fill: #8e58d4;
+    }
+
+    .discord-icon {
+      fill: #dc8add;
+    }
+
+    .icon {
+      fill: none;
+      stroke: #dc8add;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .icon-pulse {
+      animation: breathe 6s ease-in-out infinite;
+      animation-delay: -2.5s;
+    }
+
+    .pulse-link {
+      animation-delay: -5.5s;
+    }
+
+    .divider {
+      fill: none;
+      stroke: #8e58d4;
+      stroke-opacity: .16;
+    }
+
+    .shimmer {
+      fill: url(#divider-shimmer);
+      animation: sweep 12s linear infinite;
+      animation-delay: -5s;
+      opacity: 0;
+    }
+
+    .content {
+      animation: appear 1.3s ease-out both;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes breathe {
+      0%, 100% { opacity: .65; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes sweep {
+      0% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+      12%, 76% {
+        opacity: .4;
+      }
+      90%, 100% {
+        transform: translateX(920px);
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .content,
+      .icon-pulse {
+        animation: none;
+      }
+
+      .shimmer {
+        display: none;
+        animation: none;
+      }
+    }
+  </style>
+
+  <g class="content">
+    <g class="icon-pulse"
+      transform="translate(24 13)"
+      aria-hidden="true">
+      <path
+        class="discord-icon"
+        d="M20.317 4.369a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.6 12.6 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.009c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028ZM8.02 15.331c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/>
+    </g>
+
+    <text x="72" y="31">Discord</text>
+
+    <g class="icon"
+      transform="translate(800 18)"
+      aria-hidden="true">
+      <g class="icon-pulse pulse-link">
+        <path d="
+          M8 2h10v10
+          M18 2 7 13
+          M5 5H2v16h16v-3
+        "/>
+      </g>
+    </g>
+
+    <path d="M72 50H824" class="divider"/>
+
+    <g clip-path="url(#divider-clip)" aria-hidden="true">
+      <rect
+        class="shimmer"
+        x="-100"
+        y="49.3"
+        width="100"
+        height="1.4"
+      />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="840"
+  height="294"
+  viewBox="0 0 840 294"
+  role="img"
+  aria-labelledby="specs-title specs-description">
+
+  <title id="specs-title">System specifications</title>
+
+  <desc id="specs-description">
+    Processor: 13th Gen Intel Core i7-13620H.
+    GPU: NVIDIA GeForce RTX 4060 Laptop GPU.
+    Integrated graphics: Intel UHD Graphics Family.
+    Operating system: Windows 11.
+    RAM: 16 GB.
+  </desc>
+
+  <defs>
+    <linearGradient id="divider-shimmer" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#8e58d4" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#8e58d4" stop-opacity=".12"/>
+      <stop offset="65%" stop-color="#b879d8" stop-opacity=".3"/>
+      <stop offset="85%" stop-color="#b879d8" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#8e58d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="divider-clip" clipPathUnits="userSpaceOnUse">
+      <rect x="72" y="66" width="752" height="4"/>
+    </clipPath>
+
+    <g id="row-divider">
+      <path d="M72 68H824" class="divider"/>
+      <g clip-path="url(#divider-clip)">
+        <rect
+          class="shimmer"
+          x="-100"
+          y="67.3"
+          width="100"
+          height="1.4"/>
+      </g>
+    </g>
+
+    <g id="cpu-icon">
+      <rect x="5" y="5" width="18" height="18" rx="3"/>
+      <rect x="10" y="10" width="8" height="8" rx="1"/>
+      <path d="
+        M9 1v4 M14 1v4 M19 1v4
+        M9 23v4 M14 23v4 M19 23v4
+        M1 9h4 M1 14h4 M1 19h4
+        M23 9h4 M23 14h4 M23 19h4"/>
+    </g>
+
+    <g id="gpu-icon">
+      <rect x="2" y="6" width="24" height="16" rx="2"/>
+      <circle cx="11" cy="14" r="5"/>
+      <circle cx="11" cy="14" r="1"/>
+      <path d="
+        M11 9v3 M16 14h-3 M11 19v-3 M6 14h3
+        M21 10v8 M6 22v3h12v-3 M2 6V3H0"/>
+    </g>
+
+    <g id="integrated-icon">
+      <rect x="2" y="6" width="24" height="16" rx="2"/>
+      <rect x="5" y="9" width="18" height="10" rx="1"/>
+      <path d="M2 6V3H0 M6 22v3h12v-3"/>
+    </g>
+
+    <g id="windows-icon">
+      <rect x="3" y="3" width="9" height="9"/>
+      <rect x="16" y="3" width="9" height="9"/>
+      <rect x="3" y="16" width="9" height="9"/>
+      <rect x="16" y="16" width="9" height="9"/>
+    </g>
+
+    <g id="ram-icon">
+      <rect x="1" y="7" width="26" height="14" rx="2"/>
+      <path d="
+        M6 11h4v6H6z M12 11h4v6h-4z M18 11h4v6h-4z
+        M5 21v4 M9 21v4 M13 21v2
+        M17 21v4 M21 21v4 M25 21v4"/>
+    </g>
+  </defs>
+
+  <style>
+    text {
+      font-family: "Segoe UI", Ubuntu, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      fill: #8e58d4;
+    }
+
+    .label {
+      font-weight: 600;
+      fill: #dc8add;
+    }
+
+    .icon {
+      fill: none;
+      stroke: #dc8add;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .icon-pulse {
+      animation: breathe 6s ease-in-out infinite;
+      animation-delay: var(--pulse-delay, 0s);
+    }
+
+    .divider {
+      fill: none;
+      stroke: #8e58d4;
+      stroke-opacity: .16;
+    }
+
+    .shimmer {
+      fill: url(#divider-shimmer);
+      animation: sweep 12s linear infinite;
+      animation-delay: var(--shimmer-delay, 0s);
+      opacity: 0;
+    }
+
+    .row-2 { --pulse-delay: -.7s; --shimmer-delay: -2s; }
+    .row-3 { --pulse-delay: -1.4s; --shimmer-delay: -4s; }
+    .row-4 { --pulse-delay: -2.1s; --shimmer-delay: -6s; }
+    .row-5 { --pulse-delay: -2.8s; }
+
+    .content {
+      animation: appear 1.3s ease-out both;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes breathe {
+      0%, 100% { opacity: .65; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes sweep {
+      0% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+      12%, 76% {
+        opacity: .4;
+      }
+      90%, 100% {
+        transform: translateX(920px);
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .content,
+      .icon-pulse {
+        animation: none;
+      }
+
+      .shimmer {
+        display: none;
+        animation: none;
+      }
+    }
+  </style>
+
+  <g class="content">
+    <g>
+      <g class="icon" transform="translate(26 23)" aria-hidden="true">
+        <g class="icon-pulse">
+          <use href="#cpu-icon"/>
+        </g>
+      </g>
+      <text x="72" y="34" class="label">Processor</text>
+      <text x="72" y="55">13th Gen Intel Core i7-13620H</text>
+      <use href="#row-divider" aria-hidden="true"/>
+    </g>
+
+    <g class="row-2" transform="translate(0 54)">
+      <g class="icon" transform="translate(26 23)" aria-hidden="true">
+        <g class="icon-pulse">
+          <use href="#gpu-icon"/>
+        </g>
+      </g>
+      <text x="72" y="34" class="label">Graphics</text>
+      <text x="72" y="55">NVIDIA GeForce RTX 4060 Laptop GPU</text>
+      <use href="#row-divider" aria-hidden="true"/>
+    </g>
+
+    <g class="row-3" transform="translate(0 108)">
+      <g class="icon" transform="translate(26 23)" aria-hidden="true">
+        <g class="icon-pulse">
+          <use href="#integrated-icon"/>
+        </g>
+      </g>
+      <text x="72" y="34" class="label">Integrated graphics</text>
+      <text x="72" y="55">Intel UHD Graphics Family</text>
+      <use href="#row-divider" aria-hidden="true"/>
+    </g>
+
+    <g class="row-4" transform="translate(0 162)">
+      <g class="icon" transform="translate(26 23)" aria-hidden="true">
+        <g class="icon-pulse">
+          <use href="#windows-icon"/>
+        </g>
+      </g>
+      <text x="72" y="34" class="label">Operating system</text>
+      <text x="72" y="55">Windows 11</text>
+      <use href="#row-divider" aria-hidden="true"/>
+    </g>
+
+    <g class="row-5" transform="translate(0 216)">
+      <g class="icon" transform="translate(26 23)" aria-hidden="true">
+        <g class="icon-pulse">
+          <use href="#ram-icon"/>
+        </g>
+      </g>
+      <text x="72" y="34" class="label">RAM</text>
+      <text x="72" y="55">16 GB</text>
+    </g>
+  </g>
+</svg>

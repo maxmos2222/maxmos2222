@@ -5,7 +5,7 @@
   role="img"
   aria-labelledby="header-title">
 
-  <title id="header-title">Ja Servus 👋 I'm MrKoby07! :D</title>
+  <title id="header-title">Hi👋 I'm Max :D</title>
 
   <defs>
     <linearGradient
@@ -142,7 +142,7 @@
     }
   </style>
 
-  <text x="360" y="46" class="greeting">Ja Servus 👋 I'm <tspan class="name">MrKoby07</tspan>! :D</text>
+  <text x="360" y="46" class="greeting">Hi i'm <tspan class="name">Max</tspan>! :D</text>
 
   <g class="separator" aria-hidden="true">
     <!-- Soft underglow along the full line. -->

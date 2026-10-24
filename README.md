@@ -45,7 +45,7 @@ I'm a kind person :3
     </picture>
   </summary>
 
-  <p align="center">
+<p align="center">
     <picture>
       <img
         src="./data/personal.svg"
@@ -69,7 +69,7 @@ I'm a kind person :3
     </picture>
   </summary>
 
-  <p align="center">
+<p align="center">
     <picture>
       <img
         src="./data/interests.svg"
@@ -92,8 +92,8 @@ I'm a kind person :3
       />
     </picture>
   </summary>
-  
-  <p align="center">
+
+<p align="center">
     <a href="https://discord.com/users/1322220385411928136">
       <img
         src="./data/link-discord.svg"
@@ -116,7 +116,7 @@ I'm a kind person :3
     </picture>
   </summary>
 
-  <p align="center">
+<p align="center">
     <picture>
       <img
         src="./data/specs.svg"

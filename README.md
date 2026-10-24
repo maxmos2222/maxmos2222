@@ -84,7 +84,7 @@ I'm a kind person :3
   <summary>
     <picture>
       <img
-        src="./data/skills-title.svg"
+        src="./data/links-title.svg"
         alt="Skills"
         width="100"
         height="28"

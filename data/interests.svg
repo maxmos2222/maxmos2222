@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="840"
+  height="240"
+  viewBox="0 0 840 240"
+  role="img"
+  aria-labelledby="interests-title interests-description">
+
+  <title id="interests-title">Interests and hobbies</title>
+
+  <desc id="interests-description">
+    Gaming, programming, and exploring new things.
+  </desc>
+
+  <defs>
+    <linearGradient id="divider-shimmer" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#8e58d4" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#8e58d4" stop-opacity=".12"/>
+      <stop offset="65%" stop-color="#b879d8" stop-opacity=".3"/>
+      <stop offset="85%" stop-color="#b879d8" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#8e58d4" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="divider-clip" clipPathUnits="userSpaceOnUse">
+      <rect x="72" y="56" width="752" height="4"/>
+      <rect x="72" y="100" width="752" height="4"/>
+      <rect x="72" y="144" width="752" height="4"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    text {
+      font-family: "Segoe UI", Ubuntu, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      fill: #8e58d4;
+    }
+
+    .icon {
+      fill: none;
+      stroke: #dc8add;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .icon-pulse {
+      animation: breathe 6s ease-in-out infinite;
+    }
+
+    .pulse-2 {
+      animation-delay: -2s;
+    }
+
+    .pulse-3 {
+      animation-delay: -4s;
+    }
+
+    .divider {
+      fill: none;
+      stroke: #8e58d4;
+      stroke-opacity: .16;
+    }
+
+    .shimmer {
+      fill: url(#divider-shimmer);
+      animation: sweep 12s linear infinite;
+      opacity: 0;
+    }
+
+    .shimmer-2 {
+      animation-delay: -4s;
+    }
+
+    .shimmer-3 {
+      animation-delay: -8s;
+    }
+
+    .content {
+      animation: appear 1.3s ease-out both;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes breathe {
+      0%, 100% { opacity: .65; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes sweep {
+      0% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+      12% {
+        opacity: .4;
+      }
+      76% {
+        opacity: .4;
+      }
+      90%, 100% {
+        transform: translateX(920px);
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .content,
+      .icon-pulse {
+        animation: none;
+      }
+
+      .shimmer {
+        display: none;
+        animation: none;
+      }
+    }
+  </style>
+
+  <g class="content">
+    <!-- Gaming: controller -->
+    <g class="icon"
+      transform="translate(26 20)"
+      aria-hidden="true">
+      <g class="icon-pulse">
+        <path d="
+          M9 7h10
+          c3 0 5 2 6 5
+          l2 8
+          c.7 3-2.5 5-4.5 3
+          L18 19h-8
+          l-4.5 4
+          c-2 2-5.2 0-4.5-3
+          l2-8
+          c1-3 3-5 6-5Z
+        "/>
+        <path d="M7 11v6 M4 14h6"/>
+        <circle cx="19" cy="12" r="1" fill="#dc8add" stroke="none"/>
+        <circle cx="22" cy="15" r="1" fill="#dc8add" stroke="none"/>
+      </g>
+    </g>
+
+    <text x="72" y="39">Gaming</text>
+    <path d="M72 58H824" class="divider"/>
+
+    <!-- Programming: code brackets -->
+    <g class="icon"
+      transform="translate(26 64)"
+      aria-hidden="true">
+      <g class="icon-pulse pulse-2">
+        <path d="
+          M8 7l-6 7 6 7
+          M20 7l6 7-6 7
+          M17 3l-6 22
+        "/>
+      </g>
+    </g>
+
+    <text x="72" y="83">Programming</text>
+    <path d="M72 102H824" class="divider"/>
+
+    <!-- Exploring: compass -->
+    <g class="icon"
+      transform="translate(26 108)"
+      aria-hidden="true">
+      <g class="icon-pulse pulse-3">
+        <circle cx="14" cy="14" r="12"/>
+        <path d="M19 9l-3 7-7 3 3-7Z"/>
+        <path d="M14 2v2 M26 14h-2 M14 26v-2 M2 14h2"/>
+      </g>
+    </g>
+
+    <text x="72" y="127">Exploring new things</text>
+    <path d="M72 146H824" class="divider"/>
+
+    <!-- Subtle moving highlights along the divider lines. -->
+    <g clip-path="url(#divider-clip)" aria-hidden="true">
+      <rect
+        class="shimmer"
+        x="-100"
+        y="57.3"
+        width="100"
+        height="1.4"
+      />
+
+      <rect
+        class="shimmer shimmer-2"
+        x="-100"
+        y="101.3"
+        width="100"
+        height="1.4"
+      />
+
+      <rect
+        class="shimmer shimmer-3"
+        x="-100"
+        y="145.3"
+        width="100"
+        height="1.4"
+      />
+    </g>
+  </g>
+</svg>

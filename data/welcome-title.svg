@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="720"
+  height="48"
+  viewBox="0 0 720 48"
+  role="img"
+  aria-labelledby="welcome-title">
+
+  <title id="welcome-title">
+    Welcome to my README! Here's a little about me:
+  </title>
+
+  <style>
+    .message {
+      font-family: "Segoe UI", Ubuntu, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      fill: #8e58d4;
+      text-anchor: middle;
+      animation: appear 1.3s ease-out both;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .message {
+        animation: none;
+      }
+    }
+  </style>
+
+  <text x="360" y="32" class="message">
+    Welcome to my README! Here's a little about me:
+  </text>
+</svg>

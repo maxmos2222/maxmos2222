@@ -68,14 +68,14 @@
   </summary>
 
 <p align="center">
-    <picture>
-      <img
-        src="./data/interests.svg"
-        alt="Gaming; Reading"
-        width="840"
-      />
-    </picture>
-  </p>
+  <picture>
+    <img
+      src="./data/interests.svg"
+      alt="Gaming; Reading"
+      width="840"
+    />
+  </picture>
+</p>
 </details>
 
 <details>

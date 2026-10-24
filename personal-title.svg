@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="132"
+  height="28"
+  viewBox="0 0 132 28"
+  role="img"
+  aria-labelledby="personal-heading-title">
+
+  <title id="personal-heading-title">Personal</title>
+
+  <g
+    fill="none"
+    stroke="#dc8add"
+    stroke-width="1.7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true">
+    <circle cx="14" cy="7" r="5"/>
+    <path d="M4 25v-3a10 10 0 0 1 20 0v3"/>
+  </g>
+
+  <text
+    x="36"
+    y="20"
+    fill="#dc8add"
+    font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+    font-size="18"
+    font-weight="400">Personal</text>
+</svg>

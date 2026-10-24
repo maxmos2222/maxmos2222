@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="132"
+  height="28"
+  viewBox="0 0 132 28"
+  role="img"
+  aria-labelledby="specs-heading-title">
+
+  <title id="specs-heading-title">PC Specs</title>
+
+  <g
+    fill="none"
+    stroke="#dc8add"
+    stroke-width="1.7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true">
+    <rect x="2" y="4" width="24" height="16" rx="2"/>
+    <path d="M2 16h24 M14 20v4 M8 25h12"/>
+  </g>
+
+  <text
+    x="36"
+    y="20"
+    fill="#dc8add"
+    font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+    font-size="18"
+    font-weight="400">PC Specs</text>
+</svg>

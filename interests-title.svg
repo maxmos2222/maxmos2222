@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="220"
+  height="28"
+  viewBox="0 0 220 28"
+  role="img"
+  aria-labelledby="interests-heading-title">
+
+  <title id="interests-heading-title">Interests / Hobbies</title>
+
+  <g
+    fill="none"
+    stroke="#dc8add"
+    stroke-width="1.7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true">
+    <path d="
+      M9 7h10
+      c3 0 5 2 6 5
+      l2 8
+      c.7 3-2.5 5-4.5 3
+      L18 19h-8
+      l-4.5 4
+      c-2 2-5.2 0-4.5-3
+      l2-8
+      c1-3 3-5 6-5Z
+    "/>
+    <path d="M7 11v6 M4 14h6"/>
+    <circle cx="19" cy="12" r="1" fill="#dc8add" stroke="none"/>
+    <circle cx="22" cy="15" r="1" fill="#dc8add" stroke="none"/>
+  </g>
+
+  <text
+    x="36"
+    y="20"
+    fill="#dc8add"
+    font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+    font-size="18"
+    font-weight="400">Interests / Hobbies</text>
+</svg>

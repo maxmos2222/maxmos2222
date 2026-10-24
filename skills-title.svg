@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="100"
+  height="28"
+  viewBox="0 0 100 28"
+  role="img"
+  aria-labelledby="skills-heading-title">
+
+  <title id="skills-heading-title">Skills</title>
+
+  <g
+    fill="none"
+    stroke="#dc8add"
+    stroke-width="1.7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true">
+    <path d="
+      M14 6
+      C12 1 6 2 6 7
+      C1 7 1 14 4 16
+      C1 21 6 27 11 24
+      C13 26 14 23 14 21
+      Z
+    "/>
+    <path d="
+      M14 6
+      C16 1 22 2 22 7
+      C27 7 27 14 24 16
+      C27 21 22 27 17 24
+      C15 26 14 23 14 21
+    "/>
+    <path d="
+      M6 7c0 3 2 4 4 4
+      M4 16c3-2 6 0 6 3
+      M22 7c0 3-2 4-4 4
+      M24 16c-3-2-6 0-6 3
+    "/>
+  </g>
+
+  <text
+    x="36"
+    y="20"
+    fill="#dc8add"
+    font-family="Segoe UI, Ubuntu, Arial, sans-serif"
+    font-size="18"
+    font-weight="400">Skills</text>
+</svg>

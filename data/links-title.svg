@@ -7,35 +7,83 @@
 
   <title id="links-heading-title">Links</title>
 
+  <style>
+    .heading {
+      font-family: "Segoe UI", Ubuntu, Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      fill: #a566ff;
+      white-space: pre;
+    }
+
+    .icon {
+      fill: none;
+      stroke: #a566ff;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .draw {
+      stroke-dasharray: 1;
+      animation: draw-icon 1.1s cubic-bezier(.45, 0, .25, 1) both;
+    }
+
+    .detail {
+      animation-delay: .18s;
+    }
+
+    @keyframes draw-icon {
+      from {
+        stroke-dashoffset: 1;
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .heading tspan {
+        visibility: visible !important;
+      }
+
+      .draw {
+        animation: none;
+        stroke-dasharray: none;
+      }
+    }
+  </style>
+
   <g
+    class="icon"
     transform="translate(2 2)"
-    fill="none"
-    stroke="#dc8add"
-    stroke-width="1.7"
-    stroke-linecap="round"
-    stroke-linejoin="round"
     aria-hidden="true">
-    <path d="
-      M10 13
-      a5 5 0 0 0 7.54.54
-      l3-3
-      a5 5 0 0 0-7.07-7.07
-      l-1.72 1.71
-    "/>
-    <path d="
-      M14 11
-      a5 5 0 0 0-7.54-.54
-      l-3 3
-      a5 5 0 0 0 7.07 7.07
-      l1.71-1.71
-    "/>
+
+    <path
+      class="draw"
+      pathLength="1"
+      d="
+        M10 13
+        a5 5 0 0 0 7.54.54
+        l3-3
+        a5 5 0 0 0-7.07-7.07
+        l-1.72 1.71"/>
+
+    <path
+      class="draw detail"
+      pathLength="1"
+      d="
+        M14 11
+        a5 5 0 0 0-7.54-.54
+        l-3 3
+        a5 5 0 0 0 7.07 7.07
+        l1.71-1.71"/>
   </g>
 
-  <text
-    x="36"
-    y="20"
-    fill="#dc8add"
-    font-family="Segoe UI, Ubuntu, Arial, sans-serif"
-    font-size="18"
-    font-weight="400">Links</text>
+  <text x="36" y="20" class="heading" xml:space="preserve"><tspan>L<set attributeName="visibility" to="hidden" begin="0s" dur=".200s"/></tspan><tspan>i<set attributeName="visibility" to="hidden" begin="0s" dur=".235s"/></tspan><tspan>n<set attributeName="visibility" to="hidden" begin="0s" dur=".270s"/></tspan><tspan>k<set attributeName="visibility" to="hidden" begin="0s" dur=".305s"/></tspan><tspan>s<set attributeName="visibility" to="hidden" begin="0s" dur=".340s"/></tspan></text>
 </svg>

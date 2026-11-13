@@ -5,9 +5,7 @@
   role="img"
   aria-labelledby="welcome-title">
 
-  <title id="welcome-title">
-    Welcome to my README! Here's a little about me:
-  </title>
+  <title id="welcome-title">Welcome to my README! Here's a little about me:</title>
 
   <style>
     .message {
@@ -16,22 +14,16 @@
       font-weight: 400;
       fill: #8e58d4;
       text-anchor: middle;
-      animation: appear 1.3s ease-out both;
-    }
-
-    @keyframes appear {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      white-space: pre;
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .message {
-        animation: none;
+      .message tspan {
+        visibility: visible !important;
       }
     }
   </style>
 
-  <text x="360" y="32" class="message">
-    Welcome to my README! Here's a little about me:
-  </text>
+  <!-- Keep the text on one line to preserve natural spacing. -->
+  <text x="360" y="32" class="message" xml:space="preserve"><tspan>W<set attributeName="visibility" to="hidden" begin="0s" dur=".200s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur=".235s"/></tspan><tspan>l<set attributeName="visibility" to="hidden" begin="0s" dur=".270s"/></tspan><tspan>c<set attributeName="visibility" to="hidden" begin="0s" dur=".305s"/></tspan><tspan>o<set attributeName="visibility" to="hidden" begin="0s" dur=".340s"/></tspan><tspan>m<set attributeName="visibility" to="hidden" begin="0s" dur=".375s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur=".410s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur=".445s"/></tspan><tspan>t<set attributeName="visibility" to="hidden" begin="0s" dur=".480s"/></tspan><tspan>o<set attributeName="visibility" to="hidden" begin="0s" dur=".515s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur=".550s"/></tspan><tspan>m<set attributeName="visibility" to="hidden" begin="0s" dur=".585s"/></tspan><tspan>y<set attributeName="visibility" to="hidden" begin="0s" dur=".620s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur=".655s"/></tspan><tspan>R<set attributeName="visibility" to="hidden" begin="0s" dur=".690s"/></tspan><tspan>E<set attributeName="visibility" to="hidden" begin="0s" dur=".725s"/></tspan><tspan>A<set attributeName="visibility" to="hidden" begin="0s" dur=".760s"/></tspan><tspan>D<set attributeName="visibility" to="hidden" begin="0s" dur=".795s"/></tspan><tspan>M<set attributeName="visibility" to="hidden" begin="0s" dur=".830s"/></tspan><tspan>E<set attributeName="visibility" to="hidden" begin="0s" dur=".865s"/></tspan><tspan>!<set attributeName="visibility" to="hidden" begin="0s" dur=".900s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur=".935s"/></tspan><tspan>H<set attributeName="visibility" to="hidden" begin="0s" dur=".970s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur="1.005s"/></tspan><tspan>r<set attributeName="visibility" to="hidden" begin="0s" dur="1.040s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur="1.075s"/></tspan><tspan>'<set attributeName="visibility" to="hidden" begin="0s" dur="1.110s"/></tspan><tspan>s<set attributeName="visibility" to="hidden" begin="0s" dur="1.145s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur="1.180s"/></tspan><tspan>a<set attributeName="visibility" to="hidden" begin="0s" dur="1.215s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur="1.250s"/></tspan><tspan>l<set attributeName="visibility" to="hidden" begin="0s" dur="1.285s"/></tspan><tspan>i<set attributeName="visibility" to="hidden" begin="0s" dur="1.320s"/></tspan><tspan>t<set attributeName="visibility" to="hidden" begin="0s" dur="1.355s"/></tspan><tspan>t<set attributeName="visibility" to="hidden" begin="0s" dur="1.390s"/></tspan><tspan>l<set attributeName="visibility" to="hidden" begin="0s" dur="1.425s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur="1.460s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur="1.495s"/></tspan><tspan>a<set attributeName="visibility" to="hidden" begin="0s" dur="1.530s"/></tspan><tspan>b<set attributeName="visibility" to="hidden" begin="0s" dur="1.565s"/></tspan><tspan>o<set attributeName="visibility" to="hidden" begin="0s" dur="1.600s"/></tspan><tspan>u<set attributeName="visibility" to="hidden" begin="0s" dur="1.635s"/></tspan><tspan>t<set attributeName="visibility" to="hidden" begin="0s" dur="1.670s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur="1.705s"/></tspan><tspan>m<set attributeName="visibility" to="hidden" begin="0s" dur="1.740s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur="1.775s"/></tspan><tspan>:<set attributeName="visibility" to="hidden" begin="0s" dur="1.810s"/></tspan></text>
 </svg>

@@ -87,25 +87,53 @@
       font-weight: 400;
       fill: #e6def2;
       text-anchor: middle;
-      animation: appear 1.3s ease-out both;
+      animation: appear 1.3s ease-out both, bob 4.5s ease-in-out infinite 1.2s;
+      transform-origin: center;
     }
 
     .name {
       font-weight: 900;
       fill: url(#name-shine);
+      filter: drop-shadow(0 0 12px rgba(220, 138, 221, 0.75));
+      animation: shimmer 3s ease-in-out infinite alternate;
     }
 
     .separator {
-      animation: appear 1.8s ease-out both;
+      animation: appear 1.8s ease-out both, pulseLine 3s ease-in-out infinite;
+      transform-origin: center;
     }
 
     .comet {
       animation: sweep 6s linear infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .sparkle {
+      animation: twinkle 2.6s ease-in-out infinite alternate;
+      transform-box: fill-box;
+      transform-origin: center;
     }
 
     @keyframes appear {
       from { opacity: 0; }
       to { opacity: 1; }
+    }
+
+    @keyframes bob {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-2px); }
+    }
+
+    @keyframes shimmer {
+      0% { filter: drop-shadow(0 0 8px rgba(220, 138, 221, 0.35)); }
+      50% { filter: drop-shadow(0 0 16px rgba(255, 243, 255, 0.8)); }
+      100% { filter: drop-shadow(0 0 10px rgba(165, 102, 255, 0.7)); }
+    }
+
+    @keyframes pulseLine {
+      0%, 100% { opacity: 0.96; }
+      50% { opacity: 1; }
     }
 
     @keyframes sweep {
@@ -125,9 +153,27 @@
       }
     }
 
+    @keyframes twinkle {
+      0% {
+        opacity: 0.25;
+        transform: scale(0.8);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+      100% {
+        opacity: 0.5;
+        transform: scale(0.95);
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       .greeting,
-      .separator {
+      .separator,
+      .sparkle,
+      .comet,
+      .name {
         animation: none;
       }
 
@@ -137,10 +183,15 @@
 
       .comet {
         display: none;
-        animation: none;
       }
     }
   </style>
+
+  <g aria-hidden="true">
+    <circle class="sparkle" cx="182" cy="24" r="2.1" fill="#fff3ff"/>
+    <circle class="sparkle" cx="546" cy="26" r="2.3" fill="#dc8add" style="animation-delay: .5s;"/>
+    <circle class="sparkle" cx="634" cy="30" r="1.8" fill="#fff3ff" style="animation-delay: 1s;"/>
+  </g>
 
   <text x="360" y="46" class="greeting">Hi i'm <tspan class="name">Max</tspan>! :D</text>
 
@@ -183,6 +234,7 @@
          Q360 94 355 94
          Q360 94 360 88 Z"
       fill="#dc8add"
-      opacity=".85"/>
+      opacity=".85"
+      class="sparkle"/>
   </g>
 </svg>

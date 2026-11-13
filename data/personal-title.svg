@@ -1,28 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg"
   width="132"
-  height="28"
-  viewBox="0 0 132 28"
+  height="36"
+  viewBox="0 0 132 36"
   role="img"
-  aria-labelledby="personal-heading-title">
+  aria-labelledby="personal-title">
 
-  <title id="personal-heading-title">Personal</title>
+  <title id="personal-title">Personal</title>
 
   <g
     fill="none"
-    stroke="#dc8add"
-    stroke-width="1.7"
+    stroke="#a566ff"
+    stroke-width="2"
     stroke-linecap="round"
     stroke-linejoin="round"
     aria-hidden="true">
-    <circle cx="14" cy="7" r="5"/>
-    <path d="M4 25v-3a10 10 0 0 1 20 0v3"/>
+
+    <circle cx="16" cy="10" r="6.5"/>
+
+    <path d="
+      M3 32
+      v-3
+      a13 13 0 0 1 26 0
+      v3
+    "/>
   </g>
 
   <text
-    x="36"
-    y="20"
-    fill="#dc8add"
+    x="44"
+    y="26"
+    fill="#a566ff"
     font-family="Segoe UI, Ubuntu, Arial, sans-serif"
-    font-size="18"
-    font-weight="400">Personal</text>
+    font-size="22"
+    font-weight="400">
+    Personal
+  </text>
 </svg>

@@ -39,7 +39,7 @@
         src="./data/personal-title.svg"
         alt="Personal"
         width="132"
-        height="28"
+        height="36"
         align="center"
       />
     </picture>

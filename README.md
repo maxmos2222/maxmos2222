@@ -33,17 +33,17 @@
 </p>
 
 <details>
-  <summary>
-    <picture>
-      <img
-        src="./data/personal-title.svg"
-        alt="Personal"
-        width="132"
-        height="28"
-        align="center"
-      />
-    </picture>
-  </summary>
+<summary>
+  <picture>
+    <img
+      src="./data/personal-title.svg"
+      alt="Personal"
+      width="132"
+      height="36"
+      align="center"
+    />
+  </picture>
+</summary>
 
 <p align="center">
     <picture>

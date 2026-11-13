@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="120" viewBox="0 0 840 120" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub</title>
+  <desc id="desc">GitHub profile button in the same style as the other dropdown cards.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1632"/>
+      <stop offset="100%" stop-color="#0f1220"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c5cff" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#7c5cff"/>
+      <stop offset="50%" stop-color="#d88be7"/>
+      <stop offset="82%" stop-color="#7c5cff"/>
+      <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c8b4ff" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#c8b4ff" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="10" y="10" width="820" height="100" rx="18" fill="url(#bg)" stroke="#a566ff" stroke-opacity="0.7"/>
+  <rect x="22" y="22" width="796" height="76" rx="14" fill="none" stroke="#eac7ff" stroke-opacity="0.18"/>
+  <line x1="34" y1="60" x2="806" y2="60" stroke="url(#line)" stroke-width="2" stroke-linecap="round"/>
+  <rect x="46" y="32" width="138" height="28" rx="14" fill="#141b2d" stroke="#d88be7" stroke-opacity="0.5"/>
+  <text x="115" y="51" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#f7effd">GitHub</text>
+  <circle cx="720" cy="28" r="2.5" fill="#fceeff" opacity="0.9"/>
+  <circle cx="760" cy="36" r="1.8" fill="#d88be7" opacity="0.8"/>
+  <circle cx="790" cy="28" r="2.1" fill="#fceeff" opacity="0.9"/>
+  <rect x="190" y="30" width="500" height="32" rx="15" fill="url(#glow)" opacity="0.08"/>
+  <text x="440" y="52" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="0.5" fill="#f5ecff">github.com/maxmos2222</text>
+  <text x="440" y="82" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#d4c7ef" opacity="0.9">Open profile / repositories</text>
+</svg>

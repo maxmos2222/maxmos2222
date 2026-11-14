@@ -15,7 +15,6 @@
       gradientUnits="userSpaceOnUse"
       x1="16" y1="0"
       x2="704" y2="0">
-
       <stop offset="0%" stop-color="#8e58d4" stop-opacity="0"/>
       <stop offset="8%" stop-color="#8e58d4" stop-opacity=".55"/>
       <stop offset="35%" stop-color="#a566ff" stop-opacity=".85"/>
@@ -30,7 +29,6 @@
       gradientUnits="userSpaceOnUse"
       x1="-110" y1="0"
       x2="0" y2="0">
-
       <stop offset="0%" stop-color="#a566ff" stop-opacity="0"/>
       <stop offset="55%" stop-color="#a566ff" stop-opacity=".35"/>
       <stop offset="85%" stop-color="#dc8add" stop-opacity=".9"/>
@@ -39,15 +37,17 @@
 
     <path
       id="separator-track"
+      pathLength="1"
       d="M16 84 H312 L324 78 H348
          L360 84 L372 78 H396 L408 84 H704"/>
 
     <mask
       id="track-mask"
       maskUnits="userSpaceOnUse"
-      x="12" y="70"
-      width="696" height="24">
-
+      x="12"
+      y="70"
+      width="696"
+      height="24">
       <use
         href="#separator-track"
         fill="none"
@@ -64,20 +64,50 @@
       font-weight: 400;
       fill: #8e58d4;
       text-anchor: middle;
-      animation: appear 1.3s ease-out both;
+      white-space: pre;
     }
 
-    .separator {
-      animation: appear 1.8s ease-out both;
+    .line {
+      fill: none;
+      stroke: url(#separator-color);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 1 1;
+      animation: draw-line 1.2s cubic-bezier(.65, 0, .35, 1) .6s both;
+    }
+
+    .line-glow {
+      stroke-width: 6;
+      opacity: .08;
+    }
+
+    .line-front {
+      stroke-width: 1.4;
     }
 
     .comet {
-      animation: sweep 6s linear infinite;
+      opacity: 0;
+      animation: sweep 6s linear 2.2s infinite;
     }
 
-    @keyframes appear {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    .star {
+      animation: star-arrive .65s cubic-bezier(.34, 1.56, .64, 1) 1.5s both;
+    }
+
+    @keyframes draw-line {
+      from { stroke-dashoffset: 1; }
+      to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes star-arrive {
+      from {
+        transform: scale(0) rotate(-45deg);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1) rotate(0);
+        opacity: .85;
+      }
     }
 
     @keyframes sweep {
@@ -85,10 +115,7 @@
         transform: translateX(0);
         opacity: 0;
       }
-      8% {
-        opacity: 1;
-      }
-      76% {
+      8%, 76% {
         opacity: 1;
       }
       86%, 100% {
@@ -98,9 +125,21 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .message,
-      .separator {
+      .message tspan {
+        visibility: visible !important;
+      }
+
+      .line,
+      .star {
         animation: none;
+      }
+
+      .line {
+        stroke-dasharray: none;
+      }
+
+      .star {
+        opacity: .85;
       }
 
       .comet {
@@ -110,45 +149,39 @@
     }
   </style>
 
-  <text x="360" y="30" class="message">Feel free to explore some of my repositories. :3</text>
+  <!--
+    Each character defaults to visible.
+    A temporary SVG set hides it only until its typing time.
+    Keep this text element on one line to avoid extra whitespace.
+  -->
+  <text x="360" y="30" class="message" xml:space="preserve"><tspan>F<set attributeName="visibility" to="hidden" begin="0s" dur=".100s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur=".135s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur=".170s"/></tspan><tspan>l<set attributeName="visibility" to="hidden" begin="0s" dur=".205s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur=".240s"/></tspan><tspan>f<set attributeName="visibility" to="hidden" begin="0s" dur=".275s"/></tspan><tspan>r<set attributeName="visibility" to="hidden" begin="0s" dur=".310s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur=".345s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur=".380s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur=".415s"/></tspan><tspan>t<set attributeName="visibility" to="hidden" begin="0s" dur=".450s"/></tspan><tspan>o<set attributeName="visibility" to="hidden" begin="0s" dur=".485s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur=".520s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur=".555s"/></tspan><tspan>x<set attributeName="visibility" to="hidden" begin="0s" dur=".590s"/></tspan><tspan>p<set attributeName="visibility" to="hidden" begin="0s" dur=".625s"/></tspan><tspan>l<set attributeName="visibility" to="hidden" begin="0s" dur=".660s"/></tspan><tspan>o<set attributeName="visibility" to="hidden" begin="0s" dur=".695s"/></tspan><tspan>r<set attributeName="visibility" to="hidden" begin="0s" dur=".730s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur=".765s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur=".800s"/></tspan><tspan>s<set attributeName="visibility" to="hidden" begin="0s" dur=".835s"/></tspan><tspan>o<set attributeName="visibility" to="hidden" begin="0s" dur=".870s"/></tspan><tspan>m<set attributeName="visibility" to="hidden" begin="0s" dur=".905s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur=".940s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur=".975s"/></tspan><tspan>o<set attributeName="visibility" to="hidden" begin="0s" dur="1.010s"/></tspan><tspan>f<set attributeName="visibility" to="hidden" begin="0s" dur="1.045s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur="1.080s"/></tspan><tspan>m<set attributeName="visibility" to="hidden" begin="0s" dur="1.115s"/></tspan><tspan>y<set attributeName="visibility" to="hidden" begin="0s" dur="1.150s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur="1.185s"/></tspan><tspan>r<set attributeName="visibility" to="hidden" begin="0s" dur="1.220s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur="1.255s"/></tspan><tspan>p<set attributeName="visibility" to="hidden" begin="0s" dur="1.290s"/></tspan><tspan>o<set attributeName="visibility" to="hidden" begin="0s" dur="1.325s"/></tspan><tspan>s<set attributeName="visibility" to="hidden" begin="0s" dur="1.360s"/></tspan><tspan>i<set attributeName="visibility" to="hidden" begin="0s" dur="1.395s"/></tspan><tspan>t<set attributeName="visibility" to="hidden" begin="0s" dur="1.430s"/></tspan><tspan>o<set attributeName="visibility" to="hidden" begin="0s" dur="1.465s"/></tspan><tspan>r<set attributeName="visibility" to="hidden" begin="0s" dur="1.500s"/></tspan><tspan>i<set attributeName="visibility" to="hidden" begin="0s" dur="1.535s"/></tspan><tspan>e<set attributeName="visibility" to="hidden" begin="0s" dur="1.570s"/></tspan><tspan>s<set attributeName="visibility" to="hidden" begin="0s" dur="1.605s"/></tspan><tspan>.<set attributeName="visibility" to="hidden" begin="0s" dur="1.640s"/></tspan><tspan> <set attributeName="visibility" to="hidden" begin="0s" dur="1.675s"/></tspan><tspan>:<set attributeName="visibility" to="hidden" begin="0s" dur="1.710s"/></tspan><tspan>3<set attributeName="visibility" to="hidden" begin="0s" dur="1.745s"/></tspan></text>
 
-  <g transform="translate(0 156) scale(1 -1)">
-    <g class="separator" aria-hidden="true">
-      <use
-        href="#separator-track"
-        fill="none"
-        stroke="url(#separator-color)"
-        stroke-width="6"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        opacity=".08"/>
+  <g
+    transform="translate(0 156) scale(1 -1)"
+    aria-hidden="true">
 
-      <use
-        href="#separator-track"
-        fill="none"
-        stroke="url(#separator-color)"
-        stroke-width="1.4"
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
+    <use href="#separator-track" class="line line-glow"/>
+    <use href="#separator-track" class="line line-front"/>
 
-      <g mask="url(#track-mask)">
-        <rect
-          class="comet"
-          x="-110"
-          y="70"
-          width="110"
-          height="24"
-          fill="url(#comet-color)"/>
-      </g>
+    <g mask="url(#track-mask)">
+      <rect
+        class="comet"
+        x="-110"
+        y="70"
+        width="110"
+        height="24"
+        fill="url(#comet-color)"/>
+    </g>
 
+    <g transform="translate(360 94)">
       <path
-        d="M360 88
-           Q360 94 365 94
-           Q360 94 360 100
-           Q360 94 355 94
-           Q360 94 360 88 Z"
-        fill="#dc8add"
-        opacity=".85"/>
+        class="star"
+        d="M0-6
+           Q0 0 5 0
+           Q0 0 0 6
+           Q0 0-5 0
+           Q0 0 0-6 Z"
+        fill="#dc8add"/>
     </g>
   </g>
 </svg>
